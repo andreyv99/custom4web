@@ -1,0 +1,59 @@
+footer {
+    background-color: #565659;
+    padding-top:60px;
+    padding-bottom: 30px;
+}
+
+.ourPartners {
+    text-align: center;
+}
+
+.contacts{
+    padding-top: 140px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 3rem;
+    font-family: 'Heebo', sans-serif;
+    color: #ffffff;
+    font-weight:200;
+    .arrowUp {
+        width: 44px;
+        height: 44px;
+        margin: 0 auto;
+    }
+    .title {
+        padding-top: 55px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+    a {
+        color: #ffffff;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 4px;
+    }
+    p {
+        margin-bottom: 4px;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        .sprite {
+            margin: 0 8px;
+        }
+    }
+}
+
+.authors {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Heebo', sans-serif;
+    color: #ffffff;
+    span {
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+}

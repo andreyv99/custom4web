@@ -1,0 +1,214 @@
+header {
+    padding-top: 50px;
+}
+.bannerLine {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &_block-href {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-transform: uppercase;
+        font-weight: bold;
+        .shop {
+            font-size: 2.1rem;
+            font-family: 'Heebo', sans-serif;
+            color: #b6b8ba;
+        }
+        .social {
+            display: flex;
+            padding: 18px 0;
+        }
+        .donate {
+            font-size: 2.1rem;
+            font-family: 'Heebo', sans-serif;
+            color: #f36f21;
+        }
+    }
+}
+.navigationHeader {
+    padding-bottom: 25px;
+    // style for mobile menu
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    padding: 20px;
+    width: 80%;
+    z-index: 12;
+    background-color: #272c31;
+    align-items: flex-start; 
+    transition: .2s;
+    //
+    &_href {
+        font-size: 2.1rem;
+        font-family: 'Heebo', sans-serif;
+        color: #6d6e71;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0 8px;
+        &:hover {
+            color: #f36f21;
+        }
+        &:active {
+            color: #f36f21;
+        }
+    }
+}
+// show menu on click
+.showMenu {
+    left: 0;
+}
+// .hamburger {
+//     position: absolute;
+//     right: 15px;
+//     top: 0px;
+//     width: 20px;
+//     height: 19px;
+//     z-index: 2;
+//     // border-top: 3px solid #75797e;
+//     // border-bottom: 3px solid #75797e;
+// }
+
+// .hamburger:before {
+//     content: "";
+//     position: absolute;
+//     top: 5px;
+//     left: 0px;
+//     width: 100%;
+//     border-top: 3px solid #75797e;
+// }
+
+.hamburger-inner,
+  .hamburger-inner::after,
+  .hamburger-inner::before {
+    background-color: black;
+  }
+
+////////hamburger-button
+
+.hamburger {
+
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::after,
+.hamburger-inner::before {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+.hamburger--slider .hamburger-inner {
+  top: 2px;
+}
+
+.hamburger--slider .hamburger-inner::before {
+  top: 10px;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+}
+
+.hamburger--slider .hamburger-inner::after {
+  top: 20px;
+}
+
+.hamburger--slider.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+
+.hamburger--slider.is-active .hamburger-inner::before {
+  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+  opacity: 0;
+}
+
+.hamburger--slider.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-90deg);
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    header {
+        padding-top: 0;
+    }
+    .navigationHeader {
+        display: block;
+        flex-direction: column;
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        padding: 0 0 25px 0;
+        width: auto;
+        z-index: 2;
+        background-color: transparent;
+        
+    }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .bannerLine {
+        padding-bottom: 50px;
+    }
+    .navigation {
+        &_href {
+            margin: 0 16px;
+        }
+    }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

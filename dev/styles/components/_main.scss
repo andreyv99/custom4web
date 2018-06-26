@@ -1,0 +1,285 @@
+// swiper slider
+.slider {
+  padding-bottom: 60px;
+}
+.swiper-container {
+    width: 100%;
+    height: 18rem;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    img {
+      position: absolute;
+    }
+    .text {
+      background-color: rgba(49, 47, 47, 0.8117647058823529);
+      z-index: 2;
+      width: 66%;
+      color: #ffffff;
+      text-align: left;
+      padding: 25px;
+      font-family:  'Heebo', sans-serif;
+      margin-right: 10%;
+      .title {
+        text-transform: uppercase;
+        padding-bottom: 1px;
+        font-size: 1.9rem;
+        line-height: 2rem;
+      }
+      .description {
+        padding-bottom: 5px;
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+      }
+      .bookNow {
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        background-color: #f36f21;
+        padding: 1px 5px;
+      }
+    }
+  }
+  // change arrows on slider
+  .swiper-button-next, .swiper-button-prev {
+    top: auto;
+    bottom: 2%;
+  }
+  .swiper-button-prev {
+    background-image: url(../img/arrow-left.png)
+  }
+  .swiper-button-next {
+    background-image: url(../img/arrow-right.png)
+  }
+  // change pagination 
+  .swiper-pagination {
+    margin-top: 12px;
+    left: calc(50% - 30px);
+  }
+  .swiper-pagination-bullet {
+    margin: 0 6px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #000000;
+  }
+//
+
+// h1 style
+h1 {
+  font-size: 4rem;
+  color: #f36f21;
+  line-height: 4.1rem;
+  font-family: 'Heebo', sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  font-weight: bold;
+}
+
+// whats on info
+  .whatsOn {
+    .row {
+      padding-bottom: 110px;
+      img {
+        max-height: 320px;
+        height: 100%;
+      }
+    }
+  }
+  .whatsOnInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &_title {
+      font-size: 3.4rem;
+      color: #6d6e71;
+      line-height: 3.5rem;
+      font-family: 'Heebo', sans-serif;
+      text-transform: uppercase;
+      padding-bottom: 40px;
+      padding-top: 20px;
+      font-weight: bold;
+    }
+    &_description {
+      font-size: 1.5rem;
+      color: #6d6e71;
+      line-height: 1.6rem;
+      font-family: 'Heebo', sans-serif;
+      padding-bottom: 40px;
+      padding-right: 20%;
+      font-weight: 700;
+    }
+    &_hrefs {
+      font-size: 2.5rem;
+      font-family: 'Heebo', sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      .moreInfo {
+        background-color: #6d6e71;
+        color: #ffffff;
+        padding: 1px 5px;
+        padding-top: 3px;
+      }
+      .bookNow {
+        background-color: #f36f21;
+        color: #ffffff;
+        margin-left: 15px;
+        padding: 1px 5px;
+        padding-top: 3px;
+      }
+    }
+  }
+  // section sign with us
+  .signWithUs {
+    .row {
+      padding-bottom: 110px;
+    }
+  }
+
+  // section video
+  .video {
+    .row {
+      padding-bottom: 110px;
+    }
+  }
+
+  // section support us
+  .supportUs {
+    .row {
+      padding-bottom: 120px
+    }
+    &_block {
+      margin-top: 20px;
+      h1 {
+        padding-left: 0;
+        font-size: 3.5rem;
+      }
+      img {
+        height: 215px;
+      }
+    }
+    .h1Hide {
+      h1 {
+        color: #ffffff;
+      }
+    }
+  }
+ // section mediaa
+  .mediaa {
+    text-align: center;
+    padding-bottom: 80px;
+    h1 {
+      padding-bottom: 20px;
+      padding-left: 0;
+    }
+  }
+  .subscribeHref {
+    font-size: 1.8rem;
+    font-family: 'Heebo', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    .email {
+      border: 2px solid #b6b8ba;
+      color: #b6b8ba;
+      padding: 3px 7px;
+      margin: 0 5px;
+      display: inline-block;
+      width: 100px;
+    }
+    .signUp {
+      border: 2px solid #b6b8ba;
+      color: #f36f21;
+      padding: 3px 7px;
+      margin: 0 5px;
+      display: inline-block;
+      width: 100px;
+    }
+  }
+// section instagram
+  .instagram {
+    text-align: center;
+    padding-bottom: 80px;
+    h1 {
+      padding-left: 0;
+    }
+    .social {
+      padding-top: 50px;
+      display: flex;
+      justify-content: center;
+      .sprite {
+        margin: 0 15px;
+      }
+    }
+  }
+  .instagram_photo {
+    padding: 0;
+    img {
+      height: 200px;
+    }
+  }
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .swiper-container {
+    height: 32rem;
+  }
+
+  .whatsOnInfo_hrefs .bookNow, .whatsOnInfo_hrefs .moreInfo {
+    padding: 3px 15px 1px;
+  }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .slider {
+    padding-bottom: 130px;
+  }
+  .swiper-container {
+    height: 43rem;
+  }
+  .whatsOnInfo_title {
+    padding-top: 0;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .swiper-container {
+    height: 48rem;
+  }
+  .swiper-slide .text {
+    width: 40%;
+    margin-right: 10%;
+    .title {
+      padding-bottom: 25px;
+      font-size: 3.2rem;
+      line-height: 3.3rem;
+    }
+    .description {
+      padding-bottom: 35px;
+      font-size: 2.2rem;
+      line-height: 2.3rem;
+    }
+    .bookNow {
+      font-size: 2.6rem;
+      line-height: 2.6rem;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+ }
